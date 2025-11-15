@@ -1,0 +1,50 @@
+name: expense_tracker
+description: A smart expense tracker app built with Flutter & Firebase
+publish_to: 'none' # Remove this line if you plan to publish
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.2.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management
+  flutter_riverpod: ^2.3.6
+
+  # Firebase Core & Services
+  firebase_core: ^3.15.2
+  cloud_firestore: ^5.4.0
+  firebase_auth: ^5.7.0
+  google_sign_in: ^6.3.0
+
+  # Charts for analytics
+  fl_chart: ^0.60.0
+
+  # In-app webview (Linux desktop support via webview_flutter)
+  webview_flutter: ^4.0.7
+  url_launcher: ^6.1.6
+
+  # CSV export (optional for reports)
+  csv: ^5.0.0
+
+  # UUID generator for unique transaction IDs
+  uuid: ^3.0.6
+
+  # Other Flutter essentials
+  cupertino_icons: ^1.0.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/   # if you have any app icons or images
+
+
